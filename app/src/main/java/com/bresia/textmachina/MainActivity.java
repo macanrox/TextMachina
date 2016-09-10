@@ -102,6 +102,7 @@ public class MainActivity extends AppCompatActivity {
                 String input = userInput.getText().toString();
                 StringBuilder reverseInput = new StringBuilder(input).reverse();
                 if(input.equalsIgnoreCase(reverseInput.toString())) userOutput.setText("It is a palindrome");
+                else if(input.equalsIgnoreCase("palindrome")) userOutput.setText("Did you just try to check if palindrome is a palindrome? To answer your question, no it is not a palindrome.");
                 else userOutput.setText("It is not a palindrome");
             }
         });
