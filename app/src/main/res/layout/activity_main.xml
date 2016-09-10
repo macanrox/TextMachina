@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="com.bresia.textmachina.MainActivity">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Enter your desired text, then select any of the corresponding buttons to see the result!"
+            android:id="@+id/description" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="INPUT"
+            android:id="@+id/labelInput"
+            android:layout_below="@+id/description" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" android:layout_marginTop="23dp" android:textStyle="bold"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/userInput" android:layout_below="@+id/labelInput" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:inputType="text" android:enabled="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="OUTPUT"
+            android:id="@+id/labelOutput" android:layout_below="@+id/userInput" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" android:layout_marginTop="16dp" android:textStyle="bold"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Useless Button"
+            android:id="@+id/buttonUseless"
+            android:layout_marginTop="74dp" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" android:layout_below="@+id/labelOutput"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reverse String"
+            android:id="@+id/buttonReverse"
+            android:layout_alignTop="@+id/buttonUseless" android:layout_alignRight="@+id/buttonVowels"
+            android:layout_alignEnd="@+id/buttonVowels"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pig Latin"
+            android:id="@+id/buttonPig"
+            android:layout_below="@+id/buttonUseless" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" android:layout_alignRight="@+id/buttonUseless"
+            android:layout_alignEnd="@+id/buttonUseless"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Count Vowels "
+            android:id="@+id/buttonVowels"
+            android:layout_below="@+id/buttonReverse" android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Palindrome"
+            android:id="@+id/buttonPalin"
+            android:layout_below="@+id/buttonPig" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" android:layout_alignRight="@+id/buttonPig"
+            android:layout_alignEnd="@+id/buttonPig"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Count Words"
+            android:id="@+id/buttonWords" android:layout_alignBottom="@+id/buttonPalin"
+            android:layout_alignParentRight="true" android:layout_alignParentEnd="true"
+            android:layout_alignLeft="@+id/buttonReverse" android:layout_alignStart="@+id/buttonReverse"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Results will go here"
+            android:id="@+id/userOutput"
+            android:layout_marginTop="19dp"
+            android:layout_below="@+id/labelOutput" android:layout_alignParentStart="true"/>
+</RelativeLayout>
